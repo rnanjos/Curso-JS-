@@ -1,0 +1,36 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+	<script>
+		var n1 = prompt("Digite o primeiro numero");
+		var n2 = prompt("Digite o segundo numero");
+		var n3 = prompt("Digite o terceiro numero");
+
+		if((n1 < n2) && (n1 < n3)) {
+			if(n2 < n3) {
+				document.write("A ordem é: "+ n1 +", "+ n2 + ", "+ n3);
+			} else {
+				document.write("A ordem é: "+ n1 +", "+ n3 + ", "+ n2);
+			}
+		}
+		else if ((n2 < n3) && (n2 < n3)) {
+			if (n1 < n2) {
+				document.write("A ordem é: " +n2 + ", "+ n1 + ", "+ n3);
+			} else {
+				document.write("A ordem é: " + n2 + ", "+ n1 + ", "+ n3);
+			}
+		}
+		else if ((n3 < n1) && (n3 < n2)) {
+			if(n1 < n2) {
+				document.write("A ordem é: " + n3 + ", "+ n1 + ", "+ n2);
+			} else {
+				document.write("A ordem é: " + n3 + ", "+ n2 + ", "+ n1);
+			}
+		}
+	</script>
+</body>
+</head>
+<body>
+
+</html>

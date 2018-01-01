@@ -1,0 +1,27 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+</head>
+<body>
+	<script>
+		var x = 1;
+		var soma = 0;
+		document.write("Codigo | Preço<br>");
+		while(x > 0) {
+			var ped = confirm("Deseja Adicionar item");
+			if (ped == true) {
+				var codigo = prompt("Código do produto");
+				var preco = parseFloat(prompt("Preço do produto"));
+				soma = soma + preco;
+				document.write(codigo+"         |   "+ preco+"<br>");
+			} else {
+				x = -1;
+			}
+			x++;
+		}
+		document.write("Total dos itens: R$ "+soma+",00");
+
+	</script>
+</body>
+</html>

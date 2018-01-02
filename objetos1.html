@@ -1,0 +1,18 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+</head>
+<body>
+	<script>
+		var pessoa = function(nome, idade, cidade) {
+			this.nome = nome;
+			this.idade = idade;
+			this.cidade = cidade;
+		}
+
+		var SouEu = new pessoa("Renato", 10, "Piracicaba")
+		document.write(SouEu.nome+", "+SouEu.idade+", "+SouEu.cidade);
+	</script>
+</body>
+</html>

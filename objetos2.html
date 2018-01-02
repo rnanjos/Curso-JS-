@@ -1,0 +1,27 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+</head>
+<body>
+	<script>
+		var pessoa = {};
+
+		function Endereco(cidade, estado, endereco){
+			this.cidade = cidade;
+			this.estado = estado;
+			this.endereco = endereco;
+		}
+
+		pessoa["Daniela"] = new Endereco("Maringa", "Paraná", "Nildo, 99");
+		pessoa["Fulano"] = new Endereco("Londrina", "Paraná", "Duque, 99");
+		pessoa["Beltrano"] = new Endereco("Curitiba", "Paraná", "Sete de setembro, 99");
+
+		for (var elemento in pessoa) {
+			for(var teste in pessoa[elemento]){
+				document.write(elemento +": "+teste +" = "+ pessoa[elemento][teste] +"<br>");
+			}
+		}
+	</script>
+</body>
+</html>

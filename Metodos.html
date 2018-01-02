@@ -1,0 +1,23 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+</head>
+<body>
+	<button onclick="frutas()">Clique aqui</button>
+	<p id="resultado"></p>
+	<script>
+		var fruta = ['banana', 'maça', 'goiaba'];
+		document.getElementById("resultado").innerHTML = fruta;
+
+		var frutas = function() {
+			fruta.splice(0, 1, "manga", "abacate");
+			fruta.sort()
+			for(x = 0; x < fruta.length; x++) {
+				document.write(fruta[x]+"<br>");
+				x++;
+			}
+		}
+	</script>
+</body>
+</html>

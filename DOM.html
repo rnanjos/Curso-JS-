@@ -1,0 +1,25 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+</head>
+<body>
+	<p class="exemplo">Aprendendo como capturar elementos.</p>
+	<p class="exemplo">Aprendendo como capturar elementos.</p>
+	<button onclick="mudaConteudo()">Clique Aqui</button>
+
+	<script>
+		function mudaConteudo(){
+			var txt = document.getElementsByClassName("exemplo"),
+			x;
+			for(x = 0; x < txt.length; x++){
+				if(x == 0){
+					txt[0].innerHTML ="Ola Mundo";
+				}else {
+					txt[1].innerHTML ="Ola JS";
+				}
+			}
+		}
+	</script>
+</body>
+</html>

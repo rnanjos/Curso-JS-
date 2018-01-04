@@ -1,0 +1,19 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+</head>
+<body>
+	<script>
+		var aluno = {
+			nome_aluno: "Renato",
+			nome_cursos: "Sistemas de Informação",
+			disciplinas: ["programacao", "engenharia"],
+			getaluno: function() {
+				return alert(this.nome_aluno+", "+this.nome_cursos+", "+this.disciplinas[0])
+			}
+		}
+		aluno.getaluno();
+	</script>
+</body>
+</html>

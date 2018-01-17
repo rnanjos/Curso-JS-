@@ -1,0 +1,29 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+</head>
+<body>
+	<p class="exemplo">Primeiro elemento com a classe exemplo.</p>
+	<p class="exemplo">Segundo elemento com a classe exemplo.</p>
+
+	<button onclick="mudaConteudo()">Clique aqui</button>
+	<script>
+		//getElementsByClassName
+		//Captura elementos que contêm a classe especificada
+
+		function mudaConteudo(){
+			var txt = document.getElementsByClassName("exemplo");
+
+			for(x = 0; x < txt.length; x++) {
+				if(x == 0) {
+					txt[0].innerHTML = "Olá Mundo";
+				}else {
+					txt[1].innerHTML = "Olá JavaScript";
+				}
+			}
+		}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+</head>
+<body>
+	Pirmeiro Nome: <input name="nome" type="text" value="Daniela">
+	Último Nome: <input name="sobrenome" type="text" value="Reis">
+
+	<p class="exemplo">Clique no botão para capturar o primeiro nome do text.</p>
+	<p id="resultado"></p>
+	
+	<button onclick="pegarNome()">Clique Aqui</button>
+
+	<script>
+		function pegarNome(){
+			var txt = document.getElementsByName("nome");
+			document.getElementById("resultado").innerHTML = txt[0].value;
+		}
+	</script>
+</body>
+</html>

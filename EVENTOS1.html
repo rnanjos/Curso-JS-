@@ -1,0 +1,28 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+</head>
+<style>
+	button {
+		width: 300px;
+		height: 35px;
+		border: none;
+	}
+</style>
+<body>
+	<button onmouseover="mudaCor(this)" onmouseout="normalCor(this)">Clique Aqui</button>
+	<script>
+		function mudaCor(x) {
+			x.style.backgroudColor = "red";
+			x.style.color = "write";
+		}
+
+		function normalCor(x) {
+			x.style.backgroudColor = "#DD";
+			x.style.color = "black";
+		}
+	</script>
+	
+</body>
+</html>

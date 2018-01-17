@@ -1,0 +1,21 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+</head>
+<body>
+	<p class="exemplo">Clique no botão para pegar o nome do atribuito</p>
+	<p id="resultado"></p>
+
+	<button onclick="pegarNome()">Clique aqui</button>
+<script>
+	//Acessando os Atributos
+	function pegarNome() {
+		var botao = document.getElementsByTagName("button")[0];
+		document.getElementById("resultado").innerHTML = botao;
+		var botaoNome = botao.attributes[0].name;
+		document.getElementById("resultado").innerHTML = botaoNome;
+	}
+</script>	
+</body>
+</html>

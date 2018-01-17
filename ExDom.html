@@ -1,0 +1,24 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+</head>
+<body>
+	<h1>Cálculo total de aulas</h1>
+	<label for="nome">Nome:</label><input type="text" name="nome" id="nome" />
+	<label for="valor">Valor HORA/AULA: </label><input type="text" name="valor" id="valor" />
+	<label for="hora">Total H/A semanal: </label><input type="text" name="hora" id="hora" />
+	<label for="Total Geral">Total Geral</label>
+	<p id="total"></p>
+	<button onclick="calcular()">Calcular</button>
+<script>
+	function calcular (){
+		var valor = document.getElementById("valor").value;
+		var hora = document.getElementById("hora").value;
+		var total = parseInt(hora) * parseInt(valor);
+		var nome = document.getElementById("nome").value;
+		document.getElementById("total").innerHTML = nome + " recebeu esta semana: " + total;
+	}
+</script>
+</body>
+</html>

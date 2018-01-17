@@ -1,2 +1,4 @@
 # Curso-JS-
-Curso JavaScript do Keven Jesus
+
+Exercicios do livro JavaScript - Aprenda a programar ultilizando a linguagem JavaScript
+Autora: Daniela Borges dos Reis 
